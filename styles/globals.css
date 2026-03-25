@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+    /* Core palette */
+    --bg-primary: #0a0e17;
+    --bg-secondary: #0f1923;
+    --bg-card: #131d2a;
+    --bg-card-hover: #182538;
+    --bg-panel: #0d1520;
+
+    /* Borders & lines */
+    --border-color: #1a2a3a;
+    --border-glow: #00d4aa20;
+    --grid-color: #0f1f2f;
+
+    /* Accent — teal/cyan satellite feel */
+    --accent: #00d4aa;
+    --accent-dim: #00d4aa40;
+    --accent-glow: #00d4aa15;
+    --accent-secondary: #3b82f6;
+    --accent-warn: #f59e0b;
+    --accent-error: #ef4444;
+
+    /* Text */
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #475569;
+    --text-accent: #00d4aa;
+
+    /* Specific UI */
+    --navbar-bg: #080c14;
+    --statusbar-bg: #061018;
+    --tag-bg: #00d4aa18;
+    --tag-border: #00d4aa40;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(0, 212, 170, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Page transition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-transition {
+    animation: fadeIn 0.35s ease-out;
+}
+
+/* Glow pulse for live indicators */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Selection */
+::selection {
+    background: var(--accent-dim);
+    color: var(--text-primary);
+}

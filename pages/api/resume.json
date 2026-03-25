@@ -1,0 +1,279 @@
+{
+    "bio": {
+        "name": "Yash Solanki",
+        "google_scholar": "https://scholar.google.com/citations?user=HFY6DLYAAAAJ&hl=en",
+        "github": "https://github.com/yash07007"
+    },
+    "experience": [
+        {
+            "id": "1",
+            "startDate": "June 2025",
+            "endDate": "date.now()",
+            "company": "Apple - Satellite Connectivity Group",
+            "location": "San Jose, CA",
+            "role": "Software Engineer – Wireless Protocol (MAC Layer)",
+            "summary": [
+                "Designing and developing a production-grade wireless protocol for satellite communication, enabling Emergency SOS and Messages via satellite services",
+                "Architecting highly scalable scheduling and resource allocation mechanisms to support large-scale device connectivity in constrained, high-latency environments",
+                "Implemented performance-critical C++ components for real-time protocol execution and optimized throughput, latency, and reliability",
+                "Built large-scale simulation and validation frameworks and resolved complex Layer 2 (MAC) issues in production to ensure robust system integration"
+            ]
+        },
+        {
+            "id": "2",
+            "startDate": "June 2023",
+            "endDate": "June 2025",
+            "company": "Hughes Networks",
+            "location": "Germantown, MD",
+            "role": "Software Engineer - MTS 3",
+            "summary": [
+                "Spearheaded the design, development, and deployment of a proprietary multiple access protocol for HughesNet VSAT, resulting in a remarkable 25% increase in carrier bandwidth utilization using C and C++",
+                "Engineered and implemented optimizations to significantly reduce RF gateway switchover times by 40%, enhancing service reliability during adverse weather conditions for Jupiter 3 connectivity",
+                "Led comprehensive efforts in troubleshooting and resolving layer 2 (Satellite Link Layer + MAC) challenges within Hughes' flagship Jupiter 3 system, ensuring seamless operation and optimal performance"
+            ]
+        },
+        {
+            "id": "3",
+            "startDate": "Nov 2021",
+            "endDate": "May 2023",
+            "company": "Office of Chief Information Security Officer, ITS, USC",
+            "location": "Los Angeles, CA",
+            "role": "Software Engineer",
+            "summary": [
+                "Designed an architecture that aggregates 6 data sources into a single data lake on AWS for risk assessment and visualization",
+                "Conducted series of 6-month phishing campaigns for 25 USC departments resulting to 55% decrease in phishing failure rate",
+                "Presented 5 Year Risk assessment and mitigation strategy to chief Information security officer and got it approved"
+            ]
+        },
+        {
+            "id": "4",
+            "startDate": "May 2020",
+            "endDate": "May 2021",
+            "company": "SharkStriker Inc.",
+            "location": "Ahmedabad, India",
+            "role": "Software Developer (Network & Security)",
+            "summary": [
+                "Built security agent installers responsible for automating security log pipelines on Windows, Debian, Redhat and Macos systems",
+                "Integrated logs data from 12 Endpoint Management Platforms, Firewalls & SIEM systems to a standardized Elastic schema",
+                "Developed 7 log parsers with Python and Logstash for organization of the firewall and endpoint security logs on Kibana"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "name": "University of Southern California",
+            "course": "Masters in Computer Science (Computer Networks)",
+            "graduation": "May 2023",
+            "gpa": "3.6"
+        },
+        {
+            "name": "Pandit Deendayal Petroleum University",
+            "course": "Bachelors in Computer Engineering",
+            "graduation": "May 2020",
+            "gpa": "9.47"
+        }
+    ],
+    "achievements": [
+        "Selected among top 5 finalists out of 100+ teams nationally in Smart India Hackathon 2019 for the “Self-Learning Chatbot”",
+        "Received project funding grant worth ₹ 1.5 lakh ($ 2000) from our university for IOT-ML based project - “Smart Parking System”",
+        "Published 5 Research Papers and 1 Product Patent in domains like Blockchain, Machine Leaning, Computer Vision, IOT, etc",
+        "Received “Best Paper Award” at an international conference for the project “Blockchain-based Drug Regulation System”"
+    ],
+    "leadership": [
+        "Led a team of 52 members as the President of Association of Indian Students. Organized academic and cultural events of India",
+        "Elected as the President of Computer Society of India. Managed a team of 32 students and coordinated execution of workshops, tech-talks, and hackathons to enrich computer science culture at the university"
+    ],
+    "skills": [
+        {
+            "title": "frameworks",
+            "categories": [
+                { "name": "frontend", "value":"Angular, React, Bootstrap"}, 
+                { "name": "backend", "value":"Express JS, Node JS, Android SDK, Flask"}
+            ]
+        },
+        {
+            "title": "technologies",
+            "categories": [
+                { "name": "devOps", "value":"Git, Docker"}, 
+                { "name": "databases", "value":"Mongo DB, Dynamo DB, Redis, MySQL, Elasticsearch, Memcached"}, 
+                { "name": "clouds", "value":"Amazon Web Services, Google Cloud Platform"}
+            ]
+        },
+        {
+            "title": "languages",
+            "categories": [
+                { "name": "primary", "value":"C, C++, Python, JavaScript"}, 
+                { "name": "secondary", "value":"x86 Assembly, Java, TypeScript, HTML5, Solidity, Logstash"}
+            ]
+        },
+        {
+            "title": "other-skills",
+            "categories": [
+                { "name": "networks", "value":"Linux, TCP/IP, Network Protocol Design"}, 
+                { "name": "operatingSystems", "value":"Linux, Windows, Operating Systems development"},
+                { "name": "machineLearning", "value":"Machine Learning, Deep Learning, OpenCV"},
+                { "name": "misc", "value":"Blockchain, Kibana, REST APIs, Ethereum"}
+
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Weenix",
+            "image": "",
+            "description": "A single threaded non-preeemptive UNIX based OS Kernal with support for processes and threads, ramfs virtual file system, s5fs actual file system, virtual memory management and full user application support",
+            "tags": ["C", "x86 Assembly", "Linux", "GDB"]
+        },
+        {
+            "id": 2,
+            "name": "Stockker - Web and Android Application",
+            "image": "",
+            "description": "A real time stock trading platform with features like portfolio management, stock watchlist, trends visulization via charts",
+            "tags": ["Angular JS", "Node", "Express JS", "TypeScript", "Flask", "Android Studio", "GCP"],
+            "demo": "https://stockker-dot-stockker.wl.r.appspot.com/search/AMZN/",
+            "source_code": "https://github.com/yash07007/stockker"
+        },
+        {
+            "id": 3,
+            "name": "Domain Name System - DDos Attack & Defense Simulation",
+            "image": "",
+            "description": "An Domian Name System simulation in a 10 node netwrok and various scripts to perform DDos attack, packet loss and scripts to deploy DNS defenses like automated firewall filtering, Dynamic ECMP load balancing & Traffic Scrubbing.",
+            "tags": ["C", "C++", "Linux", "Netwoking"]
+        },
+        {
+            "id": 4,
+            "name": "Blockchain Based Drug Regulation System",
+            "image": "",
+            "description": "A drug regulation system involving multiple stakeholders which keeps track of drug's supply chain and gives restricted drugs to consumers after proper authorization. System makes use of smart contracts implemented on ethereum network.",
+            "tags": ["React JS", "Ethereum", "Solidity", "Web3", "Smart Contracts"],
+            "source_code": "https://github.com/yash07007/DrugRegulation",
+            "publication": "https://link.springer.com/chapter/10.1007/978-981-16-9089-1_23"
+        },
+        {
+            "id": 5,
+            "name": "VSCode Portfolio",
+            "image": "",
+            "description": "A themeable and developer-centric portfolio based on the VSCode",
+            "tags": ["React JS", "Next JS", "JavaScript"],
+            "source_code": "https://github.com/yash07007/vscode-portfolio",
+            "demo": "https://www.yash-solanki.com"
+        },
+        {
+            "id": 6,
+            "name": "MiniBlock - Tamperproof Voting System",
+            "image": "",
+            "description": "A Blockchain-based robust voting ecosystem implemented with python and Vue js.",
+            "tags": ["Vue JS", "Python", "Flask", "Blockchain"],
+            "source_code": "https://github.com/yash07007/MiniBlock"
+        },
+        {
+            "id": 7,
+            "name": "Socket Programming",
+            "image": "",
+            "description": "A socket programming project developer in C++ which is implemented with multithreading. It has client and server side of network applications which interact with each other.",
+            "tags": ["C++", "Multi Threading", "Networks"],
+            "source_code": "https://github.com/yash07007/socket_programming"
+        },
+        {
+            "id": 8,
+            "name": "Token Bucket Filter",
+            "image": "",
+            "description": "Token Bucket Filter (Network Traffic Shaper) using multithreading implemented using C",
+            "tags": ["C", "Multi Threading", "Networks"],
+            "source_code": "https://github.com/yash07007/token-bucket-filter"
+        },
+        {
+            "id": 9,
+            "name": "CrowdCoin",
+            "image": "",
+            "description": "An crowdfunding distributed application implemented on ethereum with react front end and mocha test framework.",
+            "tags": ["React JS", "Ethereum", "Smart Contracts"],
+            "source_code": "https://github.com/yash07007/CrowdCoin"
+        }
+    ],
+    "publications": [
+        {
+            "title": "Blockchain-Based Drug Regulation System",
+            "authors": "Yash Solanki, Reema Patel",
+            "publication_date": "April 2022",
+            "book": "Security, Privacy and Data Analytics",
+            "publisher": "Springer, Singapore",
+            "url": "https://link.springer.com/chapter/10.1007/978-981-16-9089-1_23"
+        },
+        {
+            "title": "Perceptual Variation Stacking: Test Time Augmentations in Endoscopy Image Segmentation",
+            "authors": "Abhi Lad, Swara Jani, Hiral Madhani, Soumya, Yash Solanki",
+            "publication_date": "December 2021",
+            "conference": "2021 36th International Conference on Image and Vision Computing New Zealand (IVCNZ)",
+            "publisher": "IEEE",
+            "url": "https://ieeexplore.ieee.org/abstract/document/9653349"
+        },
+        {
+            "title": "Energy Aware IoT based Green Smart University with Automated Lighting and CCTV System using MQTT and MySQL",
+            "authors": "Priyam Sheth, Soumya, Abhi Lad, Yash Solanki",
+            "publication_date": "October 2021",
+            "conference": "021 2nd Global Conference for Advancement in Technology (GCAT)",
+            "publisher": "IEEE",
+            "url": "https://ieeexplore.ieee.org/abstract/document/9587709"
+        },
+        {
+            "title": "Improving Machine Learning based Groundwater Level Estimation using Geological Features",
+            "authors": "Abhi Lad, Khushali Patel, Soumya, Yash Solanki",
+            "publication_date": "September 2021",
+            "conference": "2021 International Conference on Artificial Intelligence and Machine Vision (AIMV)",
+            "publisher": "IEEE",
+            "url": "https://ieeexplore.ieee.org/abstract/document/9671011"
+        },
+        {
+            "title": "Computer Vision enabled Adaptive Speed Limit Control for Vehicle Safety",
+            "authors": "Abhi Lad, Prithviraj Kanaujia, Yash Solanki",
+            "publication_date": "September 2021",
+            "conference": "2021 International Conference on Artificial Intelligence and Machine Vision (AIMV)",
+            "publisher": "IEEE",
+            "url": "https://ieeexplore.ieee.org/abstract/document/9670944"
+        }
+    ],
+    "contacts": [
+        {
+            "social": "website",
+            "link": "yash-solanki.com",
+            "href": "https://www.yash-solanki.com"
+        },
+        {
+            "social": "email",
+            "link": "ysolanki@usc.edu",
+            "href": "mailto:ysolanki@usc.edu"
+        },
+        {
+            "social": "gmail",
+            "link": "yashsolanki777@gmail.com",
+            "href": "mailto:yashsolanki777@gmail.com"
+        },
+        {
+            "social": "github",
+            "link": "github.com/yash07007",
+            "href": "https://github.com/yash07007"
+        },
+        {
+            "social": "linkedin",
+            "link": "linkedin.com/in/yash07007/",
+            "href": "https://www.linkedin.com/in/yash07007/"
+        },
+        {
+            "social": "leetcode",
+            "link": "leetcode.com/yash07007/",
+            "href": "https://leetcode.com/yash07007/"
+        },
+        {
+            "social": "publications",
+            "link": "scholar.google.com/yash07007",
+            "href": "https://scholar.google.com/citations?user=HFY6DLYAAAAJ&hl=en"
+        },
+        {
+            "social": "instagram",
+            "link": "instagram.com/yash07007",
+            "href": "https://www.instagram.com/yash07007"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    margin-bottom: 2rem;
+}
+
+.pageTitle {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0.5rem;
+}
+
+.pageDesc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.userCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid var(--accent-dim);
+}
+
+.userInfo h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.userStats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.stat {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.statValue {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.repoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.repoCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.2s;
+}
+
+.repoCard:hover {
+    border-color: var(--accent-dim);
+    box-shadow: var(--shadow-glow);
+}
+
+.repoName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+}
+
+.repoDesc {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.repoMeta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.calendarSection {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+.calendarLabel {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .userCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .userStats {
+        justify-content: center;
+    }
+
+    .repoGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,218 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.missionLabel {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.role {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btnPrimary {
+    padding: 0.6rem 1.5rem;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btnPrimary:hover {
+    box-shadow: 0 0 20px var(--accent-dim);
+    transform: translateY(-1px);
+}
+
+.btnOutline {
+    padding: 0.6rem 1.5rem;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btnOutline:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+}
+
+/* Stats panels */
+.panels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.2s;
+}
+
+.panel:hover {
+    border-color: var(--accent-dim);
+    box-shadow: var(--shadow-glow);
+}
+
+.panelLabel {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.panelValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.panelDetail {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Current mission section */
+.section {
+    margin-bottom: 2rem;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sectionDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent-dim);
+}
+
+.sectionTitle {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.missionCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 3px solid var(--accent);
+}
+
+.missionTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.missionSub {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0.75rem;
+}
+
+.missionDesc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Skills row */
+.skillsRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skillTag {
+    padding: 0.3rem 0.7rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .panels {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 2rem 0 1rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+}

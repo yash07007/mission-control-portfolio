@@ -1,0 +1,158 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    margin-bottom: 2rem;
+}
+
+.pageTitle {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0.5rem;
+}
+
+.pageDesc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border-color);
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 2px solid var(--accent);
+    z-index: 1;
+}
+
+.timelineDotActive {
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent-dim);
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    border-color: var(--accent-dim);
+    box-shadow: var(--shadow-glow);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.cardRole {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cardDate {
+    font-size: 0.7rem;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--accent);
+    white-space: nowrap;
+    padding: 0.2rem 0.6rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    border-radius: 4px;
+}
+
+.cardCompany {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.cardLocation {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.cardSummary {
+    list-style: none;
+    padding: 0;
+}
+
+.cardSummary li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.cardSummary li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .cardHeader {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cardDate {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timelineDot {
+        left: -1.5rem;
+        width: 9px;
+        height: 9px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}

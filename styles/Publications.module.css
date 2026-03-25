@@ -1,0 +1,97 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    margin-bottom: 2rem;
+}
+
+.pageTitle {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0.5rem;
+}
+
+.pageDesc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    border-color: var(--accent-dim);
+}
+
+.cardTitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.cardMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.metaDivider {
+    color: var(--border-color);
+}
+
+.cardAuthors {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.cardVenue {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.cardLink {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--accent-dim);
+    border-radius: 4px;
+    transition: all 0.15s;
+}
+
+.cardLink:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 1rem;
+    }
+}

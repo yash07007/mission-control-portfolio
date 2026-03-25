@@ -1,0 +1,45 @@
+.statusbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 28px;
+    background: var(--statusbar-bg);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.7rem;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.green { background: #22c55e; box-shadow: 0 0 6px #22c55e80; }
+.blue { background: var(--accent-secondary); }
+.yellow { background: var(--accent-warn); }
+
+@media screen and (max-width: 768px) {
+    .statusbar {
+        font-size: 0.6rem;
+        padding: 0 0.5rem;
+    }
+    .right {
+        display: none;
+    }
+}

@@ -5,7 +5,7 @@ export default function AboutPage({ education, skills, achievements, leadership 
     return (
         <div className={styles.container}>
             <div className={styles.pageHeader}>
-                <h1 className={styles.pageTitle}>Crew Profile // About</h1>
+                <h1 className={styles.pageTitle}>Profile // About</h1>
                 <p className={styles.pageDesc}>Background, training, and qualifications</p>
             </div>
 

@@ -21,7 +21,7 @@ export default function ContactPage({ contacts }) {
     return (
         <div className={styles.container}>
             <div className={styles.pageHeader}>
-                <h1 className={styles.pageTitle}>Open Channel // Contact</h1>
+                <h1 className={styles.pageTitle}>Open Communication Channel // Contact</h1>
                 <p className={styles.pageDesc}>Establish a communication link</p>
             </div>
 

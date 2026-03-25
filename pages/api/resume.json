@@ -85,35 +85,44 @@
     ],
     "skills": [
         {
+            "title": "languages",
+            "categories": [
+                { "name": "primary", "value":"C++, Go, Python"}
+            ]
+        },
+        {
+            "title": "networking",
+            "categories": [
+                { "name": "wireless", "value":"MAC Layer Design, TDMA, FDMA, OFDM, CDMA, Satellite Link Layer, VSAT, DVB-S2"}
+            ]
+        },
+        {
+            "title": "AI",
+            "categories": [
+                { "name": "tools", "value":"Claude Code, MCP, Agent Creation, Skills Creation"}
+            ]
+        },
+        {
             "title": "frameworks",
             "categories": [
-                { "name": "frontend", "value":"Angular, React, Bootstrap"}, 
-                { "name": "backend", "value":"Express JS, Node JS, Android SDK, Flask"}
+                { "name": "frontend", "value":"React, Next.js, Angular, Bootstrap"},
+                { "name": "backend", "value":"Express JS, Node JS, Flask, FastAPI"}
             ]
         },
         {
             "title": "technologies",
             "categories": [
-                { "name": "devOps", "value":"Git, Docker"}, 
-                { "name": "databases", "value":"Mongo DB, Dynamo DB, Redis, MySQL, Elasticsearch, Memcached"}, 
+                { "name": "devOps", "value":"Git, Docker, Kubernetes, CI/CD"},
+                { "name": "databases", "value":"MongoDB, DynamoDB, Redis, MySQL, Elasticsearch, Memcached"},
                 { "name": "clouds", "value":"Amazon Web Services, Google Cloud Platform"}
             ]
         },
         {
-            "title": "languages",
+            "title": "systems",
             "categories": [
-                { "name": "primary", "value":"C, C++, Python, JavaScript"}, 
-                { "name": "secondary", "value":"x86 Assembly, Java, TypeScript, HTML5, Solidity, Logstash"}
-            ]
-        },
-        {
-            "title": "other-skills",
-            "categories": [
-                { "name": "networks", "value":"Linux, TCP/IP, Network Protocol Design"}, 
-                { "name": "operatingSystems", "value":"Linux, Windows, Operating Systems development"},
-                { "name": "machineLearning", "value":"Machine Learning, Deep Learning, OpenCV"},
-                { "name": "misc", "value":"Blockchain, Kibana, REST APIs, Ethereum"}
-
+                { "name": "operatingSystems", "value":"Linux, Windows, OS Kernel Development"},
+                { "name": "lowLevel", "value":"Multithreading, Memory Management, Real-time Systems"},
+                { "name": "misc", "value":"Blockchain, Ethereum, Smart Contracts"}
             ]
         }
     ],
@@ -239,11 +248,6 @@
             "social": "website",
             "link": "yash-solanki.com",
             "href": "https://www.yash-solanki.com"
-        },
-        {
-            "social": "email",
-            "link": "ysolanki@usc.edu",
-            "href": "mailto:ysolanki@usc.edu"
         },
         {
             "social": "gmail",

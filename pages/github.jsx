@@ -1,6 +1,10 @@
 import Image from "next/image";
-import { GitHubCalendar } from "react-github-calendar";
+import dynamic from "next/dynamic";
 import styles from "@/styles/Github.module.css";
+
+const GitHubCalendar = dynamic(() => import("react-github-calendar").then(mod => mod.GitHubCalendar), {
+    ssr: false,
+});
 
 const GithubPage = ({ repos, user }) => {
     const theme = {
@@ -88,10 +92,11 @@ export async function getStaticProps() {
         }
     );
     let repos = await repoRes.json();
+    if (!Array.isArray(repos)) repos = [];
     repos = repos.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 6);
 
     return {
-        props: { title: "GitHub", repos, user },
+        props: { title: "GitHub", repos, user: user || {} },
         revalidate: 3600,
     };
 }

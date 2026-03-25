@@ -23,7 +23,7 @@ export default function HomePage({ bio, experience, skills }) {
                         Resume
                     </a>
                     <Link href="/contact">
-                        <button className={styles.btnOutline}>Open Channel</button>
+                        <button className={styles.btnOutline}>Open Commmunication Channel</button>
                     </Link>
                 </div>
             </div>

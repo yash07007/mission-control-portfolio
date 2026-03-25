@@ -13,7 +13,7 @@ const navItems = [
 ];
 
 const secondaryNav = [
-    { label: "Crew Profile", path: "/about" },
+    { label: "Profile", path: "/about" },
     { label: "Contact", path: "/contact" },
 ];
 

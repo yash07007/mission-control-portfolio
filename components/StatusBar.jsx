@@ -1,8 +1,15 @@
+import { useState, useEffect } from "react";
 import styles from "../styles/StatusBar.module.css";
 
 const StatusBar = () => {
-    const now = new Date();
-    const utc = now.toISOString().slice(11, 19) + " UTC";
+    const [utc, setUtc] = useState("--:--:-- UTC");
+
+    useEffect(() => {
+        const update = () => setUtc(new Date().toISOString().slice(11, 19) + " UTC");
+        update();
+        const interval = setInterval(update, 1000);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <footer className={styles.statusbar}>
